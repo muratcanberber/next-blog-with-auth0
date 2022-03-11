@@ -1,21 +1,10 @@
-import Image from "next/image";
-
 function HomePage() {
   return (
-    <div className="site-container">
+    <div className="max-w-2xl mx-auto">
       <div className="space-y-4">
         <h1 className="text-2xl font-bold">
-          Ben Murat Can Berber. Yazılım Blog'uma hoş geldiniz.
+          Ben Murat Can Beber. Yazılım Blog'uma hoş geldiniz.
         </h1>
-        <div className="max-w-4xl mx-auto mt-10">
-          <Image
-            src="/photo1.jpg"
-            alt="Picture of the author"
-            width={400}
-            height={400}
-          />
-        </div>
-
         <p>
           Javascript, Python, C# gibi diller ile React, NextJS, VueJS, Svelte
           gibi yazılımları kullanmayı seviyorum.
