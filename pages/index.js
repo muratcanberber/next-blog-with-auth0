@@ -5,7 +5,7 @@ function HomePage() {
     <div className="site-container">
       <div className="space-y-4">
         <h1 className="text-2xl font-bold">
-          Ben Murat Can Berber. Yazılım Blog'uma hoş geldiniz.
+          Ben Murat Can Berber. Yazılım Bloguma hoş geldiniz.
         </h1>
         <div className="max-w-4xl mx-auto mt-10">
           <Image
