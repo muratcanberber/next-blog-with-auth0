@@ -11,17 +11,15 @@ function BlogPage({ posts }) {
               key={post.url}
               className="bg-gray-100 hover:bg-gray-200 rounded-2xl  p-2"
             >
-              <Link href={post.url}>
-                <div>
-                  <h2 className="text-xl font-bold">
-                    {post.frontMatter.title}
-                  </h2>
-                  <p>{post.frontMatter.excerpt}</p>
-                  <div className="text-gray-400">
-                    <span>{post.frontMatter.date}</span>
-                  </div>
-                </div>
+              <Link href={post.url} passHref={true}>
+                <h2 className="text-xl font-bold cursor-pointer">
+                  {post.frontMatter.title}
+                </h2>
               </Link>
+              <p>{post.frontMatter.excerpt}</p>
+              <div className="text-gray-400">
+                <span>{post.frontMatter.date}</span>
+              </div>
             </article>
           );
         })}
