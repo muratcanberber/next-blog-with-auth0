@@ -7,14 +7,6 @@ function HomePage() {
         <h1 className="text-2xl font-bold">
           Ben Murat Can Berber. Yazılım Bloguma hoş geldiniz.
         </h1>
-        <div className="max-w-4xl mx-auto mt-10">
-          <Image
-            src="/photo1.jpg"
-            alt="Picture of the author"
-            width={400}
-            height={400}
-          />
-        </div>
 
         <p>
           Javascript, Python, C# gibi diller ile React, NextJS, VueJS, Svelte
@@ -24,6 +16,15 @@ function HomePage() {
         <p>
           Henüz bir Youtube kanalım yok ama bu olmayacağı anlamına gelmiyor :)
         </p>
+
+        <div className="site-4xl-container  mt-20">
+          <Image
+            src="/photo1.jpg"
+            alt="Picture of the author"
+            width={400}
+            height={400}
+          />
+        </div>
       </div>
     </div>
   );
