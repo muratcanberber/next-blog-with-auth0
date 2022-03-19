@@ -4,6 +4,7 @@ function HomePage() {
   return (
     <div className="site-container">
       <div className="space-y-4">
+        <h1 className="text-2xl font-bold">V 1.0</h1>
         <h1 className="text-2xl font-bold">
           Ben Murat Can Berber. Yazılım Bloguma hoş geldiniz.
         </h1>
