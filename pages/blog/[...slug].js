@@ -20,14 +20,16 @@ function PostPage({ post }) {
         <div className="prose">{content}</div>
       </article>
 
-      <textarea rows="3" className="border-2 rounded-xl" />
+      <textarea rows="3" className="border w-full block px-2 py-1 rounded-xl" />
       {isAuthenticated ? (
         <div className="flex items-center space-x-3">
-          <button>Send</button>
+          <button className="bg-blue-600 text-white px-2 py-1 rounded m-2">
+            Send
+          </button>
           <img src={user.picture} width={36} className="rounded-full"></img>
           <span>{user.name}</span>
           <button
-            className="bg-red-800 rounded-3xl p-2 m-2 text-white mt-4"
+            className="w-8 h-8 rounded-full bg-red-700 text-white text-lg font-extrabold"
             onClick={() =>
               logout({ returnTo: process.env.NEXT_PUBLIC_URL + "/blog" })
             }
@@ -37,7 +39,7 @@ function PostPage({ post }) {
         </div>
       ) : (
         <button
-          className="bg-green-800 text-white mt-4"
+          className="bg-green-600 text-white px-2 py-1 rounded m-2"
           onClick={() => loginWithRedirect()}
         >
           Log In
